@@ -319,19 +319,19 @@ module.exports = function(grunt) {
 		phpunit: {
 			'default': {
 				cmd: 'phpunit',
-				args: ['-c', 'phpunit.xml.dist']
+				args: ['-c', 'phpunit.xml.dist', '--verbose' ]
 			},
 			ajax: {
 				cmd: 'phpunit',
-				args: ['-c', 'phpunit.xml.dist', '--group', 'ajax']
+				args: ['-c', 'phpunit.xml.dist', '--group', 'ajax', '--verbose']
 			},
 			multisite: {
 				cmd: 'phpunit',
-				args: ['-c', 'tests/phpunit/multisite.xml']
+				args: ['-c', 'tests/phpunit/multisite.xml', '--verbose']
 			},
 			'external-http': {
 				cmd: 'phpunit',
-				args: ['-c', 'phpunit.xml.dist', '--group', 'external-http']
+				args: ['-c', 'phpunit.xml.dist', '--group', 'external-http', '--verbose']
 			}
 		},
 		uglify: {
